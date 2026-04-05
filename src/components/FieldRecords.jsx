@@ -7,14 +7,14 @@ const records = [
         title: 'Smart India Hackathon 2025',
         role: 'National Finalist',
         description: 'Consistent performance at the national level. Focused on engineering reliability and rapid prototyping to deliver a functional prototype within 36 hours.',
-        image: '/IMG-20241213-WA0105.jpg'
+        image: '/DSC_8352.JPG'
     },
     {
         year: '2024',
         title: 'Smart India Hackathon 2024',
         role: 'National Finalist',
         description: 'First national-level success, building scalable software solutions for real-world governance challenges.',
-        image: '/DSC_8352.JPG'
+        image: '/IMG-20241213-WA0105.jpg'
     }
 ];
 
