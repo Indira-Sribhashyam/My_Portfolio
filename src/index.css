@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-off-black: #0a0a0a;
+  --color-ink-red: #8b0000;
+  --color-electric-blue: #0070f3;
+  --color-deep-violet: #7928ca;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: var(--font-sans);
+}
+
+* {
+  cursor: crosshair;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Film Grain Overlay */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-off-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-electric-blue);
+}
+
+/* Matte Paper Texture */
+.matte-paper {
+  background-color: #f4f1ea;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  color: #1a1a1a;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.stamp {
+  font-family: 'Courier New', Courier, monospace;
+  border: 4px solid #8b0000;
+  color: #8b0000;
+  padding: 4px 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transform: rotate(-15deg);
+  display: inline-block;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
+}
