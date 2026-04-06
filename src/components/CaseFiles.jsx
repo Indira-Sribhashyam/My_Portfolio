@@ -9,7 +9,7 @@ const projects = [
         description: 'Production-grade Cyber Security Assistant featuring a high-performance RAG pipeline, hybrid search, and Groq integration for real-time threat analysis.',
         tags: ['FastAPI', 'RAG', 'ChromaDB', 'Groq'],
         type: 'Cyber Security System',
-        link: 'https://electricity-paris-exotic-true.trycloudflare.com/',
+        link: 'https://sankalpai-cyber-sankalp-assistant.onrender.com/',
         github: 'https://github.com/Indira-Sribhashyam/SankalpAI',
         image: '/WhatsApp%20Image%202026-04-05%20at%209.20.11%20PM.jpeg' 
     },
